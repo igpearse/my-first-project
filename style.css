@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+ul {
+  list-style-type: none;
+  margin: 30;
+  padding: 8px;
+  overflow: hidden;
+  background-color: #f6f6f6;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: blue;
+  color: white;
+}
+
+.slash {
+  position: relative;
+  display: inline;
+  text-align: center;
+  border: 0;
+  padding: 15px 8px 16px;
+  overflow: hidden;
+}
+
+#navigation {
+  margin: 0px;
+  background-color: red;
+}
+
+
+.dropdown ul li a {
+
+  text-decoration: none;
+}
+
+.social {
+  padding-left: 1px;
+  float: right;
+}
+
+.fa {
+  padding: 10px 25px 27px 15px;
+  font-size: 16px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 5px;
+  border-radius: 35%;
+  float: right;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+
+.logo {
+  background: url("./images/olu.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 360px;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.heading {
+  margin-left: 0px;
+  text-align: center;
+  background-color: blue;
+  padding: 56px;
+}
+
+.name {
+  font-family: "Merienda One", sans-serif;
+  font-weight: 100;
+  font-size: 46px;
+  margin-top: 50px;
+  color: white;
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 90px;
+  color: white;
+}
+
+.section-column {
+  padding: 0 25px 25px;
+  float: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.section-heading {
+  font-weight: 400;
+  margin: 25px 0 35px 0
+}
+
+.about {
+  text-align: center;
+}
+
+/*----------------------------------------skills*/
+
+.p-skill {
+  margin: 0px 20px 35px 0px
+}
+
+
+
+.section-column{
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 38px
+}
+
+.progress-type {
+  position: absolute;
+  left: 20px;
+  padding: 1px;
+}
+
+.container-row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  background-color: blue;
+  color: white;
+}
+
+
+.cv-pdf i {
+  font-size: 18px;
+  color: #fafafa;
+  text-align: center;
+  padding-left: 5px;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.cv-pdf i:hover {
+  color: #e84610;
+}
+
+/*----------------------------------------education time line*/
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  background-color: blue;
+  top: 0;
+  bottom: 0;
+  left: 48%;
+  margin-left: ;
+}
+
+
+/* Container around content */
+.container {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  color: white;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -20px;
+  background-color: white;
+  border: 4px solid blue;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: -220px;
+}
+
+/* Place the container to the right */
+.right {
+  left: 190px;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 20px;
+  width: 0;
+  z-index: 1;
+  right: 5px;
+  border: medium solid blue;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent blue;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 5px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent blue transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+
+.content {
+  padding: 20px 30px;
+  background-color: blue;
+  position: relative;
+  border-radius: 10px;
+}
